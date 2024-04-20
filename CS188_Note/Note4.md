@@ -28,7 +28,7 @@
 
 爬山算法是不完备的。另一方面，随机重复爬山算法（Random-restart hill-climbing algorithm）从随机选择的初始状态开始执行多次爬山搜索。由于某种情况下，随机选取的初始状态可以收敛到全局最大值，所以该算法的完备性是平凡的。
 
-注意：在这门课后面你将会遇到术语 “梯度下降（gradient descent）”。它和爬山算法的思想相同，只不过我们不是最大化目标函数，而是最小化代价函数。
+注意：在这门课后面你将会遇到术语 “梯度下降（gradient descent）”。它和爬山算法的思想相同，只不过我们不是最大化目标函数，而是*最小化代价函数*。
 
 ## Simulated Annealing Search 模拟退火搜索
 
@@ -45,3 +45,9 @@
 <center><img src="./pic/pseudocode_simulated_annealing.png" width=550></center>
 
 > 注意：概率的计算方式为 $ e^{\Delta E / T} $，其中 $ \Delta E $ 对应目标值的增量，$ T $ 为温度。
+>
+> 对于schedule，一个简单的方法是定义一个超参数 alpha，计算 $ \text{alpha}^t $，通过阈值设置 T 为 0。
+
+## Local Beam Search 局部束搜索
+
+局部束搜索是爬山算法的另一个变体。这两个算法的主要不同点是：
