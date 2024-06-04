@@ -1,0 +1,14 @@
+{
+    "cSpell.enableFiletypes": [
+        "assembly",
+        "cmake",
+        "dockerfile",
+        "makefile",
+        "markdown-math",
+        "markdown_latex_combined",
+        "sql",
+        "tex",
+        "verilog",
+        "xdc"
+    ]
+}
